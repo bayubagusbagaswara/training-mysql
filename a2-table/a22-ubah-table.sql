@@ -13,3 +13,8 @@ modify nama varchar(100) first;
 -- modifikasi table barang
 alter table barang
 add column deskripsi text;
+-- jika kita ingin sebuah data di baris itu tidak boleh diisi NULL, maka tambahkan NOT NULL
+-- misal kolom id dataya tidak boleh ada yg null
+alter table barang
+modify id int not null,
+    modify nama varchar(200) not null;
