@@ -3,3 +3,7 @@
 select *
 from products
 where kategori in ('Makanan', 'Minuman');
+-- not in digunakan untuk selain kondisi yang dimasukkan
+select *
+from products
+where kategori not in ('Makanan', 'Minuman');
